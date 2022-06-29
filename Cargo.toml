@@ -1,0 +1,13 @@
+[package]
+name = "godot-steam-launcher"
+version = "1.0.0"
+edition = "2021"
+build = "build.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[target.'cfg(windows)'.build-dependencies]
+winres = "0.1.12"
+
